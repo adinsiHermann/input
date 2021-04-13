@@ -1,0 +1,16 @@
+<h1>Infos sur le Developpeur</h1>
+
+<div class="desc">
+    <p>Hi I'm {{developer.lastName}} {{developer.firstName}}, 
+        I'm  {{developer.sexe}},  {{developer.age}} years
+        old</p>
+    <p> My Bio :  {{developer.bio}}
+</p>
+</div>
+
+<div *ngFor= "let skill of developer.skills">
+    <app-skill [skill]="skill"></app-skill>
+    
+</div>
+
+
